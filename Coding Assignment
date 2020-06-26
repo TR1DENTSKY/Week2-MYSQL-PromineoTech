@@ -12,8 +12,7 @@ GROUP BY title;
 
 3. How much money was spent on salary for the marketing department between the years 1990 and 1992?
 
-SELECT dept_name, sum(salary) AS Total
-FROM salaries 
+SELECT dept_name, sum(salary) FROM salaries 
 INNER JOIN dept_emp
 ON salaries.emp_no = dept_emp.emp_no
 INNER JOIN departments 
